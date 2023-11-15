@@ -13,7 +13,6 @@ header{
 .barra-late{
     width: 150px;
     background-color: rgb(0, 0, 0);
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,12 +30,16 @@ header{
 .maincontainer{
     background-color: rgb(170, 70, 70);
     height: calc(100vh - 75px);
+    display: flex;
+    width: 100vw;
+    
 }
 
 .maincontent{
-    width: 100%;
+    width: calc(100vw - 150px);
     background-color: white;
     overflow-y: auto;
+    
     
 }
 
@@ -48,3 +51,26 @@ header{
     background-color: white;
 }
 
+.underline{
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(22,91,186);
+}
+
+.underline-green{
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(19, 136, 39);
+}
+
+.underline-red{
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(211, 32, 20);
+}
+
+.underline-yellow{
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(219, 216, 33);
+}

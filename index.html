@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>DASHBOARD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="row p-3 ">
+            <div class="col-1">
+                <img class="img-fluid" src="img/logo.svg" alt="LOGO">
+            </div>
+            <div class="col-10">
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+            </div>
+            <div class="col-1 d-flex ">
+                <i class="fa-solid fa-list fa-md px-2 lh-lg"></i>
+                <i class="fa-solid fa-circle-question fa-md px-2 lh-lg"></i>
+                <i class="fa-solid fa-ellipsis-vertical fa-md px-2 lh-lg"></i>
+                <i class="fa-solid fa-bell fa-md px-2 lh-lg" style="color: #eacd10;"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="maincontainer">
+            <div class="barra-late">
+                <div class="barra-alta">
+                    <div>
+                        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                        <span class="text-white">HOME</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lines-leaning" style="color: #ffffff;"></i>
+                        <span class="text-white">STATS</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
+                        <span class="text-white">SIGNAL</span>
+                    </div>
+                </div>
+                <div class="barra-bassa">
+                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    <span class="text-white">Admin</span>
+                </div>
+            </div>
+            <div class="maincontent ">
+                <div class="top">
+                    <div class="row p-3 text-white">
+                    <div class="col-4">
+                        <div>
+                            <h2 class="d-inline">BOOLEAN</h2>
+                            <span>piano blaze</span>
+                        </div>
+                        <div>
+                            <span>3 app</span>
+                            <span>>></span>
+                            <span>Boolean mobile app</span>
+                            <span>Boolean web app</span>
+                            <span>boolean blog app</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p>Sudenti Online negli ultimi 30 minuti</p>
+                        <h2>125</h2>
+                    </div>
+                    <div class="col-4">
+                        <span>Nuvo studente </span>
+                        <i class="fa-regular fa-square-plus fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div>
+                  
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

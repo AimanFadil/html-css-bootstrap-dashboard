@@ -11,20 +11,33 @@
 <body>
     <header>
         <div class="row  ">
-            <div class="col-1">
-                <img class="img-fluid" src="img/logo.svg" alt="LOGO">
+            <div class="col-2">
+                <img class="img-fluid d-none d-lg-inline-block p-3" src="img/logo.svg" alt="LOGO">
+                <img class="size-img d-lg-none " src="img/mobile-logo.png" alt="">
             </div>
-            <div class="col-10">
-                <div class="input-group flex-nowrap">
+            <div class="col-8">
+                <div class="input-group flex-nowrap p-3">
                     <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
             </div>
-            <div class="col-1 d-flex ">
-                <i class="fa-solid fa-list fa-md px-2 lh-lg"></i>
-                <i class="fa-solid fa-circle-question fa-md px-2 lh-lg"></i>
-                <i class="fa-solid fa-ellipsis-vertical fa-md px-2 lh-lg"></i>
-                <i class="fa-solid fa-bell fa-md px-2 lh-lg" style="color: #eacd10;"></i>
+            <div class="col-2 d-flex ">
+                <i class="fa-solid fa-list fa-md px-2 lh-lg d-none d-lg-inline-block p-3"></i>
+                <i class="fa-solid fa-circle-question fa-md px-2 lh-lg d-none d-lg-inline-block p-3"></i>
+                <i class="fa-solid fa-ellipsis-vertical fa-md px-2 lh-lg d-none d-lg-inline-block p-3"></i>
+                <span>
+                    <div class="dropdown">
+                        <span  type="" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell fa-md px-2 lh-lg p-3" style="color: #eacd10;"></i>
+                        </span>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profilo</a></li>
+                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
+                </span>
+                
             </div>
         </div>
     </header>
@@ -34,26 +47,26 @@
                 <div class="barra-alta p-2">
                     <div>
                         <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                        <span class="text-white">HOME</span>
+                        <span class="text-white d-none d-lg-inline-block">HOME</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-lines-leaning" style="color: #ffffff;"></i>
-                        <span class="text-white">STATS</span>
+                        <span class="text-white d-none d-lg-inline-block">STATS</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
-                        <span class="text-white">SIGNAL</span>
+                        <span class="text-white d-none d-lg-inline-block">SIGNAL</span>
                     </div>
                 </div>
                 <div class="barra-bassa p-2">
                     <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
-                    <span class="text-white">Admin</span>
+                    <span class="text-white d-none d-lg-inline-block">Admin</span>
                 </div>
             </div>
             <div class="maincontent ">
                 <div class="bg-liteblue">
                     <div class="row  text-white">
-                        <div class="col-4 ">
+                        <div class="col-md-4 col-sm-12">
                         <div class="p-2">
                             <h2 class="d-inline">BOOLEAN</h2>
                             <span class="underline">piano blaze</span>
@@ -61,18 +74,18 @@
                         <div class="p-2">
                             <span class="underline">3 app</span>
                             <span>>></span>
-                            <span class="underline">Boolean mobile app</span>
-                            <span class="underline">Boolean web app</span>
-                            <span class="underline">boolean blog app</span>
+                            <span class="underline d-none d-lg-inline-block">Boolean mobile app</span>
+                            <span class="underline d-none d-lg-inline-block">Boolean web app</span>
+                            <span class="underline d-none d-lg-inline-block">boolean blog app</span>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-12">
                         <div class="p-2">
                             <p>Sudenti Online negli ultimi 30 minuti</p>
                             <h2>125</h2>
                         </div>
                     </div>
-                    <div class="col-4 d-flex justify-content-end ">
+                    <div class="col-md-4 col-sm-12 order-1 d-flex justify-content-end ">
                         <div class="p-2">
                             <span>Nuovo studente </span>
                             <i class="fa-regular fa-square-plus fa-2xl p-2" style="color: #ffffff;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
@@ -81,7 +94,7 @@
                 </div>
                 <div class="bg-bianco">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-xl-8 col-md-12 col-sm-12">
                             <div class="card m-3">
                                 <div class="card-header">
                                   <h2>Prossime classi</h2>
@@ -91,8 +104,8 @@
                                         <thead>
                                           <tr>
                                             <th scope="col">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">ROI</th>
+                                            <th scope="col d-none d-md-inline-block">Data inizio</th>
+                                            <th scope="col d-none d-md-inline-block">ROI</th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
                                           </tr>
@@ -100,57 +113,57 @@
                                         <tbody>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>15/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">15/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-green">Done</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>16/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">16/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-green">Done</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>17/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">17/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-yellow">Process</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>18/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">18/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-green">Done</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>19/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">19/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-red">Failed</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>20/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">20/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-green">Done</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>21/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">21/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-red">Failed</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><i class="fa-solid fa-code" style="color: #d8300b;"></i> Classe 75</th>
-                                            <td>22/02/2021</td>
-                                            <td>20&percnt;</td>
+                                            <td class="d-none d-md-inline-block">22/02/2021</td>
+                                            <td class="d-none d-md-inline-block">20&percnt;</td>
                                             <td><span class="underline-green">Done</span></td>
                                             <td><i class="fa-solid fa-square-pen fa-2xl" style="color: #6c757d;" ></i> <i class="fa-solid fa-trash fa-2xl" style="color: #6c757d;"></i></td>
                                           </tr>
@@ -184,7 +197,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-xl-4 col-md-12 col-sm-12">
                             <div class="card m-3">
                                 <div class="card-header">
                                   <h2>Todo</h2>
@@ -210,8 +223,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card m-3" style="width: 22rem;">
-                                <img src="img/stats.jpeg" class="card-img-top " alt="...">
+                            <div class="card m-3" style="width: 22rem ; ">
+                                <img src="img/stats.jpeg" class="card-img-top img-fluid" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">Utenti attivi</h5>
                                   <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
